@@ -40,14 +40,6 @@ COPY script.js /home/scripts/script.js
 # Set up enviroment variables
 ENV LOADER_SCRIPT_PATH=/home/scripts
 
-		# -I$METACALL_PATH/include \
-		# test.c \
-		# -B$(dirname ${LDLIB_PATH}) \
-		# -Wl,--dynamic-linker=${LDLIB_PATH} \
-		# -Wl,-rpath=${METACALL_PATH}/lib \
-		# -L$METACALL_PATH/lib \
-		# -lmetacall \
-
 # Build the nim source (and run the executable for testing)
 RUN echo "Build and run Nim JavaScript Example" \
 	&& export METACALL_PATH="/gnu/store/`ls /gnu/store/ | grep metacall | head -n 1`" \
