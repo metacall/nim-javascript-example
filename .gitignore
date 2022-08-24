@@ -1,0 +1,12 @@
+# IDEs and editors
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Nim cache
+nimcache/
+
+# Output directory
+build/
